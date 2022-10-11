@@ -1,4 +1,4 @@
-from src.calculator import get_values
+from src.get_values import get_values
 from faker import Faker
 
 fake = Faker(locale='en_US')
