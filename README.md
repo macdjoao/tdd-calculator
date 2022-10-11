@@ -1,2 +1,3 @@
 # pytest
-Repositório para práticas e estudos da biblioteca PyTest
+
+Studies and practices with PyTest.
