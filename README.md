@@ -10,6 +10,6 @@ For run project:
 
  > pip install -r requirements.txt
 
- > for run the tests, just type 'pytest' in a terminal
+ > for run the tests, just type "pytest" in a terminal
 
- > for analyse all the tests coverage, type "pytest --cov=src tests/ --cov-report html"
+ > for analyse all the tests coverage with more details, type "pytest --cov=src tests/ --cov-report html"
