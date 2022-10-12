@@ -1,21 +1,12 @@
-from operator import sub
 from src.subtraction import subtraction
-from faker import Faker
-
-fake = Faker(locale='en_US')
+from .fixtures import numbers
 
 
-def test_subtraction():
+def test_subtraction(numbers):
     """test_subtraction
     """
-
-    # Given
-    first_entry = fake.random_number()
-    second_entry = fake.random_number()
-    payload = (first_entry, second_entry)
-
     # When
-    result = subtraction(payload)
+    result = subtraction(numbers)
 
     # Then
-    assert result == (first_entry - second_entry)
+    assert result == (numbers[0] - numbers[1])

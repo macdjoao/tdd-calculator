@@ -1,20 +1,12 @@
 from src.division import division
-from faker import Faker
-
-fake = Faker(locale='en_US')
+from .fixtures import numbers
 
 
-def test_division():
+def test_division(numbers):
     """test_division
     """
-
-    # Given
-    first_entry = fake.random_number()
-    second_entry = fake.random_number()
-    payload = (first_entry, second_entry)
-
     # When
-    result = division(payload)
+    result = division(numbers)
 
     # Then
-    assert result == (first_entry / second_entry)
+    assert result == (numbers[0] / numbers[1])

@@ -1,20 +1,12 @@
 from src.addition import addition
-from faker import Faker
-
-fake = Faker(locale='en_US')
+from .fixtures import numbers
 
 
-def test_addition():
+def test_addition(numbers):
     """test_addition
     """
-
-    # Given
-    first_entry = fake.random_number()
-    second_entry = fake.random_number()
-    payload = (first_entry, second_entry)
-
     # When
-    result = addition(payload)
+    result = addition(numbers)
 
     # Then
-    assert result == (first_entry + second_entry)
+    assert result == (numbers[0] + numbers[1])
