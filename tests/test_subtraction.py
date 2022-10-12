@@ -6,6 +6,8 @@ fake = Faker(locale='en_US')
 
 
 def test_subtraction():
+    """test_subtraction
+    """
 
     # Given
     first_entry = fake.random_number()

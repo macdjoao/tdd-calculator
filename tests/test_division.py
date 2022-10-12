@@ -5,6 +5,8 @@ fake = Faker(locale='en_US')
 
 
 def test_division():
+    """test_division
+    """
 
     # Given
     first_entry = fake.random_number()
