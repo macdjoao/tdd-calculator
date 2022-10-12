@@ -10,5 +10,8 @@ def division(tuple):
     try:
         result = tuple[0] / tuple[1]
         return result
+    except ZeroDivisionError as err:
+        print(
+            f'[DIVISION] It is not possible to divide a number by zero: [{err}]')
     except Exception as err:
         print(f'[DIVISION] Something is wrong: [{err}]')
