@@ -1,5 +1,5 @@
 from src.subtraction import subtraction
-from .fixtures import numbers
+from .conftest import numbers
 
 
 def test_subtraction(numbers):

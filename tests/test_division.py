@@ -1,5 +1,5 @@
 from src.division import division
-from .fixtures import numbers
+from .conftest import numbers
 
 
 def test_division(numbers):

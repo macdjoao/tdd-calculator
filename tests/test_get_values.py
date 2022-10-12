@@ -1,5 +1,5 @@
 from src.get_values import get_values
-from .fixtures import numbers
+from .conftest import numbers
 
 
 def test_get_values(monkeypatch, numbers):

@@ -1,5 +1,5 @@
 from src.addition import addition
-from .fixtures import numbers
+from .conftest import numbers
 
 
 def test_addition(numbers):

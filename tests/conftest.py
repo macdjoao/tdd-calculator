@@ -6,7 +6,7 @@ fake = Faker(locale='en_US')
 # Given
 
 
-@pytest.fixture
+@pytest.fixture(scope="module")
 def numbers():
     first_entry = fake.random_number()
     second_entry = fake.random_number()
