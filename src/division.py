@@ -8,7 +8,7 @@ def division(tuple):
         float: result of division between tuples first and second element
     """
     try:
-        result = tuple[0] / tuple[1]
+        result = float(tuple[0] / tuple[1])
         return result
     except ZeroDivisionError as err:
         print(
