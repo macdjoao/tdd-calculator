@@ -2,11 +2,10 @@ def multiplication(tuple):
     """multiplication
 
     Args:
-        first_value (float): the first float returned from the function get_values()
-        second_value (float): the second float returned from the function get_values()
+        tuple (tuple)
 
     Returns:
-        float: a tuple with the multiplication of the values received by get_values()
+        float: result of multiplication between tuples first and second element
     """
     try:
         result = tuple[0] * tuple[1]
