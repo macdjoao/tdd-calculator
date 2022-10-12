@@ -1,8 +1,10 @@
 from src.addition import addition
 from .conftest import valid_numbers, invalid_numbers, invalid_first_number, invalid_second_number
 import pytest
+from pytest import mark
 
 
+@mark.addition
 def test_addition_valid_numbers(valid_numbers):
     """test_addition
     """
@@ -13,6 +15,7 @@ def test_addition_valid_numbers(valid_numbers):
     assert result == (valid_numbers[0] + valid_numbers[1])
 
 
+@mark.addition
 def test_addition_invalid_numbers(invalid_numbers):
     """test_addition
     """
@@ -25,6 +28,7 @@ def test_addition_invalid_numbers(invalid_numbers):
         assert result
 
 
+@mark.addition
 def test_addition_invalid_first_number(invalid_first_number):
 
     # When
@@ -35,6 +39,7 @@ def test_addition_invalid_first_number(invalid_first_number):
         assert result
 
 
+@mark.addition
 def test_addition_invalid_second_number(invalid_second_number):
 
     # When

@@ -1,7 +1,9 @@
 from src.get_values import get_values
 from .conftest import valid_numbers, invalid_numbers, invalid_first_number, invalid_second_number
+from pytest import mark
 
 
+@mark.get_values
 def test_get_values(monkeypatch, valid_numbers):
     """test_get_values
 
