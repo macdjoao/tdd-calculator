@@ -12,3 +12,4 @@ For run project:
 
  > for run the tests, just type 'pytest' in a terminal
 
+ > for analyse all the tests coverage, type "pytest --cov=src tests/ --cov-report html"

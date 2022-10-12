@@ -1,0 +1,6 @@
+[run]
+source = ./source
+
+[report]
+exclude_lines =
+
