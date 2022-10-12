@@ -13,10 +13,10 @@ def main():
         mul = multiplication(values)
         div = division(values)
 
-        print(f'Addition between {values} = {add}')
-        print(f'Subtraction between {values} = {sub}')
-        print(f'Multiplication between {values} = {mul}')
-        print(f'Division between {values} = {div}')
+        print(f'Addition between {values[0]} and {values[1]} = {add}')
+        print(f'Subtraction between {values[0]} and {values[1]} = {sub}')
+        print(f'Multiplication between {values[0]} and {values[1]} = {mul}')
+        print(f'Division between {values[0]} and {values[1]} = {div}')
 
         return values, add, sub, mul, div
 
