@@ -1,4 +1,4 @@
-def subtraction(tuple):
+def subtraction(tuple) -> float:
     """subtraction
 
     Args:
@@ -8,7 +8,7 @@ def subtraction(tuple):
         float: result of subtraction between tuples first and second element
     """
     try:
-        result = float(tuple[0] - tuple[1])
+        result: float = float(tuple[0] - tuple[1])
         return result
-    except Exception as err:
-        print(f'[SUBTRACTION] Something is wrong: [{err}]')
+    except Exception:
+        return None

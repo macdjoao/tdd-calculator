@@ -5,20 +5,20 @@ from src.multiplication import multiplication
 from src.division import division
 
 
-def main():
+def main() -> str:
     """main
     """
     try:
-        values = get_values()
-        add = addition(values)
-        sub = subtraction(values)
-        mul = multiplication(values)
-        div = division(values)
+        values: tuple = get_values()
+        add: float = addition(values)
+        sub: float = subtraction(values)
+        mul: float = multiplication(values)
+        div: float = division(values)
 
-        print(f'Addition between {values[0]} and {values[1]} = {add}')
-        print(f'Subtraction between {values[0]} and {values[1]} = {sub}')
-        print(f'Multiplication between {values[0]} and {values[1]} = {mul}')
-        print(f'Division between {values[0]} and {values[1]} = {div}')
+        text_response = f'Addition between {values[0]} and {values[1]} = {add}\nSubtraction between {values[0]} and {values[1]} = {sub}\nMultiplication between {values[0]} and {values[1]} = {mul}\nDivision between {values[0]} and {values[1]} = {div}'
+        print(text_response)
 
-    except Exception as err:
-        print(f'[MAIN] Something is wrong: [{err}]')
+        return text_response
+
+    except Exception:
+        return None
