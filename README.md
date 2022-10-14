@@ -12,4 +12,6 @@ For run project:
 
  > for run the tests, just type "pytest" in a terminal
 
+ > for run the tests for just one function (using markers), just type "pytest -m 'function_name'" in a terminal
+
  > for analyse all the tests coverage with more details, type "pytest --cov=src tests/ --cov-report html"
