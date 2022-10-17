@@ -48,3 +48,14 @@ def test_division_invalid_second_number(invalid_second_number):
 
         # Then
         assert result
+
+
+@mark.division
+def test_division_by_zero(valid_numbers):
+
+    # When
+    with pytest.raises(ZeroDivisionError):
+        result = division(valid_numbers[0] / 0)
+
+        # Then
+        assert result
