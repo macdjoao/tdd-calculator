@@ -15,3 +15,5 @@ For run project:
  > for run the tests for just one function (using markers), just type "pytest -m 'function_name'" in a terminal
 
  > for analyse all the tests coverage with more details, type "pytest --cov=src tests/ --cov-report html"
+ 
+ > if you want to test the calculator, just type "python run.py"
