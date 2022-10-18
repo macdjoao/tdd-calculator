@@ -1,4 +1,4 @@
-# pytest
+# TDD-Calculator
 
 Studies and practices with PyTest.
 
